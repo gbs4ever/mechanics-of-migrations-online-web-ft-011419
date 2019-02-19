@@ -1,9 +1,5 @@
-class CreateArtists < ActiveRecord::Migration
-  def up
-  end
+class CreateArtists < ActiveRecord::Migration[4.2]
 
-  def down
-  end
   def change
     create_table :artists do |t|
       t.string :name
